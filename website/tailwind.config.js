@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         "comic-relief": ["Comic Relief", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       spacing: {
         13: "3.25rem",
