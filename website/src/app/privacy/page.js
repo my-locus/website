@@ -1,15 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import Logo from "../assets/locus-thumbtack-black.png";
+import Logo from "../components/ui/Logo";
 
 export default function Privacy() {
   return (
     <div className="w-full min-h-screen px-16 py-8 gap-10 flex flex-col">
-      <div className="flex gap-4 items-center">
-        <Image src={Logo} alt="Locus Logo" width={48} height={48} />
-        <p className="comic-relief text-3xl">Locus</p>
-      </div>
+      <Logo />
 
       <div className="flex flex-col gap-2">
         <p className="text-4xl comic-relief">Privacy Policy for Locus</p>
