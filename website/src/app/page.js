@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       <p className="comic-relief text-2xl text-center">
-        Curating experiences for couples and social groups. Coming soon...
+        Curating experiences for couples. Coming soon...
       </p>
     </div>
   );
