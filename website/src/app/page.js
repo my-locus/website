@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <div className="hero bg-violet-400 dark:bg-violet-800 relative isolate px-6 pt-14 lg:px-8">
+      <section className="hero bg-violet-400 dark:bg-violet-800 relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -90,7 +90,7 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-48 md:py-56">
+        <div className="mx-auto max-w-2xl py-48 md:py-58">
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-white md:text-7xl">
               Connect and Find Places Together
@@ -123,7 +123,42 @@ export default function Home() {
             className="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
           />
         </div>
-      </div>
+      </section>
+      <section className="bg-white py-32">
+        <div className="mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              How It Works
+            </h2>
+          </div>
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="text-center">
+              <div className="mx-auto h-48 w-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                <span className="text-gray-500">Image 1</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Take a Fun Quiz
+              </h3>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-48 w-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                <span className="text-gray-500 dark:text-gray-400">Image 2</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Join a Group
+              </h3>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-48 w-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                <span className="text-gray-500 dark:text-gray-400">Image 3</span>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Find Curated Date Experiences
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
