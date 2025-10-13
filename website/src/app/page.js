@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div>
       <header className="bg-violet-400 dark:bg-violet-800 relative z-50">
-        <nav className="mx-auto flex items-center justify-between px-6 py-5">
+        <nav className="fixed top-0 w-full mx-auto flex items-center justify-between px-6 py-5">
           <div className="flex items-center gap-x-6 md:gap-x-12">
             <a href="#" className="flex items-center gap-2 text-xl font-semibold text-gray-900 dark:text-white">
               <Image
@@ -90,7 +90,7 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 md:py-52">
+        <div className="mx-auto max-w-2xl py-48 md:py-56">
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-white md:text-7xl">
               Connect and Find Places Together
@@ -98,14 +98,14 @@ export default function Home() {
             <p className="mt-8 text-xl font-medium text-pretty text-black md:text-xl/8">
               Remove the friction in modern dating
             </p>
-            <div className="mt-8 flex items-center justify-center gap-x-6">
-              <a href="https://apps.apple.com/us/app/locus-find-places-together/id6752917187?platform=iphone" className="flex items-center gap-1 rounded-xl bg-violet-700 pl-8 pr-9 py-4 text-2xl font-semibold text-white hover:text-black hover:-translate-y-1 transition-transform dark:border-black dark:bg-black dark:hover:bg-white">
+            <div className="mt-8 flex items-center justify-center gap-x-6 text-lg md:text-2xl">
+              <a href="https://apps.apple.com/us/app/locus-find-places-together/id6752917187?platform=iphone" className="flex items-center gap-1 rounded-xl bg-violet-700 pl-8 pr-9 py-4 font-semibold text-white hover:text-black hover:-translate-y-1 transition-transform dark:border-black dark:bg-black dark:hover:bg-white">
                 <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
                 Download
               </a>
-              <a href="#" className="flex items-center gap-1 rounded-xl bg-white px-8 py-4 text-2xl font-semibold text-black hover:bg-gray-100 hover:text-gray-700 hover:-translate-y-1 transition-transform dark:border-black">
+              <a href="#" className="flex items-center gap-1 rounded-xl bg-white px-8 py-4 font-semibold text-black hover:bg-gray-100 hover:text-gray-700 hover:-translate-y-1 transition-transform dark:border-black">
                 Email Survey
               </a>
             </div>
