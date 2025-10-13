@@ -4,6 +4,7 @@ import "./globals.css";
 import Image from "next/image";
 import thumbtackBlack from "../../assets/locus-thumbtack-black.png";
 import thumbtackWhite from "../../assets/locus-thumbtack-white.png";
+import locationDecision from "../../assets/location-confirmation.jpg";
 
 import { useEffect, useState } from "react";
 
@@ -158,6 +159,41 @@ export default function Home() {
                 Find Curated Date Experiences
               </h3>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-26">
+        <div className="mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Remove the Annoying External Factors
+            </h2>
+          </div>
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="text-center">
+              <div className="mx-auto h-48 w-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                <span className="text-gray-500 dark:text-gray-400">Image</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-48 w-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                <span className="text-gray-500 dark:text-gray-400">Image</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-26">
+        <div className="mx-auto px-6 lg:px-8">
+          <div className="text-center flex flex-col items-center">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              Focus on Socializing with a Personalized<br />Location Finding and Date Planning Assistant
+            </h2>
+            <Image
+                src={locationDecision}
+                alt="location decision"
+                className="mt-10 h-130 ml-3 w-auto"
+              />
           </div>
         </div>
       </section>
