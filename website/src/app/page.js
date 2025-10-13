@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showNavDownload, setShowNavDownload] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -26,6 +27,7 @@ export default function Home() {
         const rect = heroSection.getBoundingClientRect();
         setShowNavDownload(rect.bottom < 0);
       }
+      setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -38,8 +40,8 @@ export default function Home() {
 
   return (
     <div>
-      <header className="bg-violet-400 dark:bg-violet-800 relative z-50">
-        <nav className="fixed top-0 w-full mx-auto flex items-center justify-between px-6 py-5">
+      <header className="relative z-50">
+        <nav className={`fixed top-0 w-full mx-auto flex items-center justify-between px-6 py-5 transition-colors duration-300 ${isScrolled ? 'bg-violet-400 dark:bg-violet-800' : 'bg-transparent'}`}>
           <div className="flex items-center gap-x-6 md:gap-x-12">
             <a href="#" className="flex items-center gap-2 text-xl font-semibold text-gray-900 dark:text-white">
               <Image
@@ -124,7 +126,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-white py-32">
+      <section className="bg-white py-102">
         <div className="mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
