@@ -57,10 +57,10 @@ export default function Home() {
               />
               Locus
             </a>
-            <a href="#" className="text-base font-semibold text-gray-900 dark:text-white">
+            <a href="#features" className="text-base font-semibold text-gray-900 dark:text-white">
               Features
             </a>
-            <a href="#" className="text-base font-semibold text-gray-900 dark:text-white">
+            <a href="#about" className="text-base font-semibold text-gray-900 dark:text-white">
               About
             </a>
             <a href="/support" className="text-base font-semibold text-gray-900 dark:text-white">
@@ -127,7 +127,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-white py-32">
+      <section id="features" className="bg-white py-32">
         <div className="mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-26">
+      <section id="about" className="bg-white py-26">
         <div className="mx-auto px-6 lg:px-8">
           <div className="text-center flex flex-col items-center">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
