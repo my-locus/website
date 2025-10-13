@@ -126,7 +126,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-white py-102">
+      <section className="bg-white py-32">
         <div className="mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
