@@ -1,12 +1,34 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 
 import Logo from "../components/ui/Logo";
 
 export default function Privacy() {
   return (
-    <div className="w-full min-h-screen px-16 py-8 gap-10 flex flex-col">
-      <Logo />
+    <div className="w-full min-h-screen bg-off-white">
+      {/* Header */}
+      <header className="px-20 py-6">
+        <nav className="flex items-center justify-between">
+          <Logo />
+          <div className="flex items-center gap-6">
+            <Link
+              href="/#manifesto"
+              className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
+            >
+              Manifesto
+            </Link>
+            <Link
+              href="/#faq"
+              className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
+            >
+              FAQ
+            </Link>
+          </div>
+        </nav>
+      </header>
+
+      <div className="px-20 py-8 gap-10 flex flex-col">
 
       <div className="flex flex-col gap-2">
         <p className="text-4xl comic-relief">Privacy Policy for Locus</p>
@@ -165,14 +187,24 @@ export default function Privacy() {
           }
         />
       </div>
+
+      {/* Footer */}
+      <footer className="py-6" style={{ borderColor: '#F2F2F7' }}>
+        <div className="flex items-center justify-between">
+            <div />
+
+            <p className='text-slate-700 font-lato'>&copy;2025 Locusapp</p>
+        </div>
+      </footer>
+      </div>
     </div>
   );
 }
 
 function ThemeText({ text, bold = false }) {
   if (bold) {
-    return <p className="lato-bold text-lg">{text}</p>;
+    return <p className="lato-bold text-lg text-slate-700">{text}</p>;
   } else {
-    return <p className="lato text-lg">{text}</p>;
+    return <p className="lato text-lg text-slate-700">{text}</p>;
   }
 }
