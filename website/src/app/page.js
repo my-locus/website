@@ -6,11 +6,13 @@ import Demo from "../../assets/demo.png"
 import { Download, Sparkles, MapPin, ChevronDown } from 'lucide-react';
 import Logo from "./components/ui/Logo"
 import Modal from "./components/ui/Modal"
+import DownloadApple from "../../assets/download_apple.svg"
+import PreregisterGoogle from "../../assets/preregister_google.png.png"
 
 export default function LocusLanding() {
 
-    const [openFaq, setOpenFaq] = useState(null);
-    const [showAndroidModal, setShowAndroidModal] = useState(false);
+  const [openFaq, setOpenFaq] = useState(null);
+  const [showAndroidModal, setShowAndroidModal] = useState(false);
 
   const faqs = [
     {
@@ -29,7 +31,7 @@ export default function LocusLanding() {
       question: "What makes Locus different from just Googling date ideas?",
       answer: "Googling gives you endless, generic lists that create more guesswork. Locus eliminates the guesswork entirely. Instead of just a list of places, Locus acts as your expert guide, providing a small, curated set of plans based on the unique combination of your two personalities. It's not about finding a popular place; it's about finding the right place for you and your date to have a genuine connection."
     },
-        {
+    {
       question: "What's the best way to invite someone to use Locus without it being awkward?",
       answer: "We recommend framing it as a fun, easy way to skip the planning headache. Hey, so I just found this new app called Locus. It's like an AI that finds cool spots based on our personalities. Wanna try it out to find a place for us to meet?"
     },
@@ -46,13 +48,13 @@ export default function LocusLanding() {
         <nav className="flex items-center justify-between">
           <Logo />
           <div className="flex items-center gap-6">
-            <a 
+            <a
               href="/manifesto"
               className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
             >
               Manifesto
             </a>
-            <a 
+            <a
               href="#faq"
               className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
             >
@@ -63,9 +65,9 @@ export default function LocusLanding() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12 md:py-20 relative overflow-hidden">
+      <section className="container mx-auto px-4 py-12 md:py-10 relative overflow-hidden">
         {/* Animated grid background */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             backgroundImage: `
@@ -78,7 +80,7 @@ export default function LocusLanding() {
             animation: 'fadeGrid 4s ease-in-out infinite alternate'
           }}
         />
-        
+
         <style>{`
           @keyframes fadeGrid {
             0% { opacity: 0.6; }
@@ -90,7 +92,7 @@ export default function LocusLanding() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
             <div>
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ 
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{
                 background: 'linear-gradient(135deg, #7F5FFF 0%, #5C43E0 100%)',
                 boxShadow: '0 2px 8px rgba(127, 95, 255, 0.3)'
               }}>
@@ -98,41 +100,31 @@ export default function LocusLanding() {
                 <span className="text-sm font-medium text-white">Now live at UC Irvine</span>
               </div>
 
-              
+
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-700 mb-6 leading-tight">
                 A great match deserves more than an{' '}
                 <span className='text-locus-off-purple'>awkward coffee date</span>
               </h1>
-              
+
               <p className="text-lg md:text-xl mb-8 text-slate-700">
-              Locus acts as your personal AI wingman after you match, designing a full date plan—from the vibe to the location—based on both your personalities.</p>
+                Locus acts as your personal AI wingman after you match, designing a full date plan—from the vibe to the location—based on both your personalities.</p>
 
               {/* App Store Buttons */}
               <div className="flex flex-row gap-5 mb-6">
-                <a 
+                <a
                   href="https://apps.apple.com/us/app/locus-find-places-together/id6752917187?platform=iphone"
                   target="_blank"
                   rel="noopener"
-                  className="flex items-center max-w-1/2 gap-3 px-6 py-2 rounded-2xl font-semibold text-white transition-all bg-locus-off-purple hover:scale-105 shadow-lg"
-                  
+                  className="flex items-center w-48 h-14 rounded-2xl"
                 >
-                  <Download className="w-5 h-5" />
-                  <div className="text-left">
-                    <div className="text-xs">Download on the</div>
-                    <div className="text-lg">App Store</div>
-                  </div>
+                  <Image src={DownloadApple} alt="app store icon" className="w-full h-full object-contain" />
                 </a>
-                
-                <button 
+
+                <button
                   onClick={() => setShowAndroidModal(true)}
-                  className="flex items-center gap-3 px-6 py-2 max-w-1/2 rounded-2xl font-semibold text-white transition-all hover:scale-105 shadow-lg"
-                  style={{ backgroundColor: '#5C43E0' }}
+                  className="w-48 h-14 rounded-2xl hover:cursor-pointer"
                 >
-                  <Download className="w-5 h-5" />
-                  <div className="text-left">
-                    <div className="text-xs">Get it on</div>
-                    <div className="text-lg">Google Play</div>
-                  </div>
+                  <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
                 </button>
               </div>
 
@@ -142,27 +134,27 @@ export default function LocusLanding() {
             </div>
 
             {/* Right side - Phone mockup */}
-     <div className="relative hidden md:flex justify-center items-center">
-              <div 
+            <div className="relative hidden md:flex justify-center items-center">
+              <div
                 className="w-[340px] h-[680px] rounded-[55px] shadow-2xl relative overflow-hidden"
-                style={{ 
+                style={{
                   backgroundColor: '#1a1a1a',
-                  boxShadow: '0 30px 60px -15px rgba(135, 206, 235, 0.4), 0 0 0 8px #2a2a2a, 0 0 0 10px #1a1a1a'
-      
+                  boxShadow: '0 30px 60px -15px rgba(0, 0, 0, 0), 0 0 0 8px #2a2a2a, 0 0 0 10px #1a1a1a'
+
                 }}
               >
                 {/* Screen content */}
                 <div className="absolute p-4" style={{ backgroundColor: '#f2f2f2' }}>
-                  
+
                   {/* Screenshot area */}
-                  <div 
-                    className="w-full h-full overflow-hidden" 
+                  <div
+                    className="w-full h-full overflow-hidden"
                   >
-                    <Image 
+                    <Image
                       src={Demo}
-                      alt="Locus App Demo" 
-                      width={320} 
-                      height={640} 
+                      alt="Locus App Demo"
+                      width={320}
+                      height={640}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -178,10 +170,10 @@ export default function LocusLanding() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-700 text-center mb-16">
             Frequently Asked Questions
           </h2>
-          
+
           <div className="border-t" style={{ borderColor: '#E5E7EB' }}>
             {faqs.map((faq, index) => (
-              <div 
+              <div
                 key={index}
                 className="border-b transition-all duration-300"
                 style={{ borderColor: '#E5E7EB' }}
@@ -193,18 +185,16 @@ export default function LocusLanding() {
                   <h3 className="text-xl font-bold pr-8" style={{ color: '#314158' }}>
                     {faq.question}
                   </h3>
-                  <ChevronDown 
-                    className={`w-6 h-6 flex-shrink-0 transition-transformduration-300 ${
-                      openFaq === index ? 'rotate-180' : ''
-                    }`}
+                  <ChevronDown
+                    className={`w-6 h-6 flex-shrink-0 transition-transformduration-300 ${openFaq === index ? 'rotate-180' : ''
+                      }`}
                     style={{ color: '#314158' }}
                   />
                 </button>
-                
-                <div 
-                  className={`transition-all duration-300 ease-in-out ${
-                    openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+
+                <div
+                  className={`transition-all duration-300 ease-in-out ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                   style={{ overflow: 'hidden' }}
                 >
                   <div className="px-6 pb-6">
@@ -222,9 +212,9 @@ export default function LocusLanding() {
       {/* Footer */}
       <footer className="py-6" style={{ borderColor: '#F2F2F7' }}>
         <div className="px-24 flex items-center justify-between">
-            <div />
+          <div />
 
-            <p className='text-slate-700 font-lato'>&copy;2025 Locusapp</p>
+          <p className='text-slate-700 font-lato'>&copy;2025 Locusapp</p>
         </div>
       </footer>
 

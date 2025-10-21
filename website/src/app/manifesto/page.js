@@ -8,7 +8,7 @@ export default function Manifesto() {
   return (
     <div className="w-full min-h-screen bg-off-white">
       {/* Header */}
-      <header className="px-20 py-6">
+      <header className="px-4 md:px-20 py-6">
         <nav className="flex items-center justify-between">
           <Logo />
           <div className="flex items-center gap-6">
@@ -28,15 +28,15 @@ export default function Manifesto() {
         </nav>
       </header>
 
-      <div className="px-20 py-8 gap-10 flex flex-col">
+      <div className="px-4 md:px-20 py-8 gap-10 flex flex-col">
 
       <div className="flex flex-col gap-3">
-        <p className="text-4xl comic-relief text-slate-700">The Locus Manifesto: Securing the Connection</p>
+        <p className="text-2xl md:text-4xl comic-relief text-slate-700">The Locus Manifesto: Securing the Connection</p>
       </div>
 
-      <div className="max-w-3/4 flex flex-col gap-7">
+      <div className="w-full md:max-w-3/4 flex flex-col gap-7">
         <div className="flex flex-col gap-4">
-          <p className="text-2xl lato-bold text-slate-700">I. The State of Disconnect</p>
+          <p className="text-xl md:text-2xl lato-bold text-slate-700">I. The State of Disconnect</p>
           <ThemeText 
             text={"We live in an era where connection should thrive, yet students are accepting that college is lonely, leading to an unspoken problem of social disconnect. College life is often romanticized, but upon arrival, the reality is not what was expected."} 
           />
@@ -49,7 +49,7 @@ export default function Manifesto() {
         </div>
         
         <div className="flex flex-col gap-4">
-          <p className="text-2xl lato-bold text-slate-700">II. Our Decoupling Mandate</p>
+          <p className="text-xl md:text-2xl lato-bold text-slate-700">II. Our Decoupling Mandate</p>
           <ThemeText 
             text={"Locus is founded on the principle of decoupling—breaking the links of the existing customer value chain by identifying and stealing the activity that customers are most unsatisfied with. We target the weakest link in the social connection process: the high effort, time, and anxiety associated with planning a successful date."} 
           />
@@ -60,7 +60,7 @@ export default function Manifesto() {
         </div>
         
         <div className="flex flex-col gap-4">
-          <p className="text-2xl lato-bold text-slate-700">III. The Power of the Personal Wingman</p>
+          <p className="text-xl md:text-2xl lato-bold text-slate-700">III. The Power of the Personal Wingman</p>
           <ThemeText 
             text={"We replace guesswork with engineering, turning the unpredictable process of securing a connection into a designed experience."} 
           />
@@ -81,7 +81,7 @@ export default function Manifesto() {
         </div>
         
         <div className="flex flex-col gap-4">
-          <p className="text-2xl lato-bold text-slate-700">IV. Focus on the Connection</p>
+          <p className="text-xl md:text-2xl lato-bold text-slate-700">IV. Focus on the Connection</p>
           <ThemeText 
             text={"We decouple the value eroding activity of complex date planning from the value creating activity of genuine social connection."} 
           />
