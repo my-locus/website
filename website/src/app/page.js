@@ -89,7 +89,7 @@ export default function LocusLanding() {
         `}</style>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{
@@ -122,7 +122,7 @@ export default function LocusLanding() {
 
                 <button
                   onClick={() => setShowAndroidModal(true)}
-                  className="w-36 sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
+                  className="sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
                 >
                   <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
                 </button>
@@ -134,7 +134,7 @@ export default function LocusLanding() {
             </div>
 
             {/* Right side - Phone mockup */}
-            <div className="relative hidden md:flex justify-center items-center">
+            <div className="relative hidden lg:flex justify-center items-center">
               <div
                 className="w-[340px] h-[680px] rounded-[55px] shadow-2xl relative overflow-hidden"
                 style={{
