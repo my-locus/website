@@ -110,19 +110,19 @@ export default function LocusLanding() {
                 Locus acts as your personal AI wingman after you match, designing a full date plan—from the vibe to the location—based on both your personalities.</p>
 
               {/* App Store Buttons */}
-              <div className="flex flex-row gap-5 mb-6">
+              <div className="flex flex-row gap-3 sm:gap-5 mb-6">
                 <a
                   href="https://apps.apple.com/us/app/locus-find-places-together/id6752917187?platform=iphone"
                   target="_blank"
                   rel="noopener"
-                  className="flex items-center w-48 h-14 rounded-2xl"
+                  className="flex items-center w-36 sm:w-48 h-12 sm:h-14 rounded-2xl flex-shrink-0"
                 >
                   <Image src={DownloadApple} alt="app store icon" className="w-full h-full object-contain" />
                 </a>
 
                 <button
                   onClick={() => setShowAndroidModal(true)}
-                  className="w-48 h-14 rounded-2xl hover:cursor-pointer"
+                  className="w-36 sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
                 >
                   <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
                 </button>
