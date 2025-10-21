@@ -35,6 +35,10 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+
+  itunes: {
+    appId: '6752917187',
+  },
 };
 
 export default function RootLayout({ children }) {
