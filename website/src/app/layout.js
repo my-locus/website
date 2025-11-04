@@ -14,22 +14,22 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Locus",
-  description: "A great match deserves more than an awkward coffee date",
+  description: "Stop settling for boring boba dates. Locus uses personality science to create perfect date plans for college students. Get personality insights and let AI find your spark.",
 
   // Open Graph (OG) tags (which web crawlers like Apple's will read when someone shares your)
   // website
   openGraph: {
-    // title: 'Your Amazing Page Title', // Will default to metadata.title if not set
-    // description: 'A compelling description...', // Will default to metadata.description
-    // siteName: 'Your Site Name',
+    // title: ""
+    description: 'Stop settling for boring boba dates. Get personality insights and let AI create the perfect date plan.',
+    siteName: 'Locus',
     url: 'https://www.trylocus.app', // The canonical URL
-    
+
     images: [
       {
-        url: 'https://www.trylocus.app/images/your-chosen-preview-image.jpg',
+        url: 'https://www.trylocus.app/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'A description of your preview image',
+        alt: 'Locus - AI Dating App for College Students',
       },
     ],
     locale: 'en_US',

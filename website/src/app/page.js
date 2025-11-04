@@ -17,7 +17,7 @@ export default function LocusLanding() {
   const faqs = [
     {
       question: "How does Locus work?",
-      answer: "Locus gets to know both of you through a quick, insightful personality quiz. Our AI then finds your common ground and designs a complete blueprint for a great hangout—the right vibe, the perfect activity, and the ideal location, all built around what makes you both tick."
+      answer: "Both you and your match complete a quick onboarding personality quiz based on the OCEAN model (openness, conscientiousness, extraversion, agreeableness, neuroticism). Our AI analyzes both personalities to recommend date locations and plans that create the right vibe for genuine connection—no more awkward boba runs."
     },
     {
       question: "Is Locus free?",
@@ -25,24 +25,45 @@ export default function LocusLanding() {
     },
     {
       question: "Do both people need to have the app?",
-      answer: "Yes, for the best and most accurate recommendations, both people need to download the app and complete their personality quiz. This ensures the plan is perfectly personalized for both of you. When you invite someone, they get a special link that takes them right to the app for a smooth and quick setup."
+      answer: "Yes, for the best and most accurate recommendations, both people need to download the app and complete their onboarding personality quiz. This ensures the plan is perfectly personalized for both of you. When you invite someone, they get a special link that takes them right to the app for a smooth and quick setup."
     },
     {
-      question: "What makes Locus different from just Googling date ideas?",
-      answer: "Googling gives you endless, generic lists that create more guesswork. Locus eliminates the guesswork entirely. Instead of just a list of places, Locus acts as your expert guide, providing a small, curated set of plans based on the unique combination of your two personalities. It's not about finding a popular place; it's about finding the right place for you and your date to have a genuine connection."
+      question: "What makes Locus different from other dating solutions?",
+      answer: "Unlike other apps that keep you glued to your phone with endless icebreakers, Locus gets you off the app and into real life faster. We're not competing with dating apps—we're making their users more successful by solving the disconnect that happens after you match."
     },
     {
       question: "What's the best way to invite someone to use Locus without it being awkward?",
-      answer: "We recommend framing it as a fun, easy way to skip the planning headache. Hey, so I just found this new app called Locus. It's like an AI that finds cool spots based on our personalities. Wanna try it out to find a place for us to meet?"
+      answer: "We recommend framing it as a fun, easy way to skip the planning headache and get personality insights about each other: 'Hey, so I just found this new app called Locus. It's like an AI that finds cool spots based on our personalities and helps us understand each other better. Wanna try it out?'"
+    },
+    {
+      question: "Does Locus learn from my preferences?",
+      answer: "Yes! Our AI learns from the date plan suggestions you use and reject, giving you a more personalized experience the more you use Locus. This means better recommendations over time that truly match your style."
     },
     {
       question: "When is Android coming?",
-      answer: "Great news! The Android version of Locus is currently in a closed beta. We're looking for passionate users to help us test the app, find bugs, and give us feedback so we can move on to a public release. If you're an Android user and want to be one of the first to try Locus, you can sign up to become a beta tester right here: [Link to your beta sign-up form]. Your feedback is crucial to helping us bring the full Locus experience to the entire Android community!"
+      answer: "Great news! The Android version of Locus is currently in a closed beta. We're looking for passionate users to help us test the app, find bugs, and give us feedback so we can move on to a public release. If you're an Android user and want to be one of the first to try Locus, you can sign up to become a beta tester."
     },
   ];
 
   return (
     <div className="min-h-screen bg-off-white">
+      {/* Featured Header */}
+      <div className="bg-yellow-500 py-3">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-sm font-bold text-black">
+            🎉 Featured by UCI ANTrepreneur Center -{" "}
+            <a
+              href="https://antrepreneur.uci.edu/2025/10/24/interview-with-antrepreneurs-larry-le-and-aadi-agrawal-of-locus/"
+              target="_blank"
+              rel="noopener"
+              className="underline hover:no-underline"
+            >
+              Read the full interview
+            </a>
+          </p>
+        </div>
+      </div>
+
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
@@ -92,22 +113,16 @@ export default function LocusLanding() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{
-                background: 'linear-gradient(135deg, #7F5FFF 0%, #5C43E0 100%)',
-                boxShadow: '0 2px 8px rgba(127, 95, 255, 0.3)'
-              }}>
-                <Sparkles className="w-4 h-4 text-white" />
-                <span className="text-sm font-medium text-white">Now live at UC Irvine</span>
-              </div>
+
 
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-700 mb-6 leading-tight">
                 A great match deserves more than an{' '}
-                <span className='text-locus-off-purple'>awkward coffee date</span>
+                <span className='text-locus-off-purple'>awkward boba date</span>
               </h1>
 
               <p className="text-lg md:text-xl mb-8 text-slate-700">
-                Locus acts as your personal AI wingman after you match, designing a full date plan—from the vibe to the location—based on both your personalities.</p>
+                Skip the planning stress and back and forth texts trying to learn about someone. Locus uses a quick onboarding personality quiz to give you insight and a date plan that lets you both be yourselves.</p>
 
               {/* App Store Buttons */}
               <div className="flex flex-row gap-3 sm:gap-5 mb-6">
@@ -129,7 +144,7 @@ export default function LocusLanding() {
               </div>
 
               <p className="text-sm text-slate-400">
-                Free to download • AI-powered date planning • Perfect for after you match
+                Free to download • Perfect for college students • Built by UC Irvine students
               </p>
             </div>
 
@@ -209,12 +224,42 @@ export default function LocusLanding() {
         </div>
       </section>
 
+      {/* Download CTA Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-700 mb-6">
+            Your AI wingman is waiting
+          </h2>
+          <p className="text-lg text-slate-600 mb-8">
+            Stop settling for safe, boring dates that kill the vibe. Get personality insights and let science create sparks.
+          </p>
+
+          <div className="flex flex-row justify-center gap-3 sm:gap-5">
+            <a
+              href="https://apps.apple.com/us/app/locus-find-places-together/id6752917187?platform=iphone"
+              target="_blank"
+              rel="noopener"
+              className="flex items-center w-36 sm:w-48 h-12 sm:h-14 rounded-2xl flex-shrink-0"
+            >
+              <Image src={DownloadApple} alt="app store icon" className="w-full h-full object-contain" />
+            </a>
+
+            <button
+              onClick={() => setShowAndroidModal(true)}
+              className="sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
+            >
+              <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-6" style={{ borderColor: '#F2F2F7' }}>
         <div className="px-24 flex items-center justify-between">
           <div />
 
-          <p className='text-slate-700 font-lato'>&copy;2025 Locusapp</p>
+          <p className='text-slate-700 font-lato'>&copy;2025 locusapp</p>
         </div>
       </footer>
 
