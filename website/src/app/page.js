@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Demo from "../../assets/demo.png"
+import Demo from "../../assets/demo2.png"
 import { Download, Sparkles, MapPin, ChevronDown } from 'lucide-react';
 import Logo from "./components/ui/Logo"
 import Modal from "./components/ui/Modal"
@@ -158,6 +158,9 @@ export default function LocusLanding() {
 
                 }}
               >
+                {/* Top notch */}
+                <div className="absolute top-7 left-1/2 transform -translate-x-1/2 w-22 h-6 bg-black rounded-full z-20"></div>
+
                 {/* Screen content */}
                 <div className="absolute p-4" style={{ backgroundColor: '#f2f2f2' }}>
 
@@ -174,6 +177,9 @@ export default function LocusLanding() {
                     />
                   </div>
                 </div>
+
+                {/* Bottom line */}
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-36 h-1 bg-gray-600 rounded-full z-20"></div>
               </div>
             </div>
           </div>
@@ -256,7 +262,7 @@ export default function LocusLanding() {
 
       {/* Footer */}
       <footer className="py-6" style={{ borderColor: '#F2F2F7' }}>
-        <div className="px-24 flex items-center justify-between">
+        <div className="px-5 lg:px-24 flex items-center justify-between">
           <div />
 
           <p className='text-slate-700 font-lato'>&copy;2025 locusapp</p>
