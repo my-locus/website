@@ -137,9 +137,9 @@ export default function LocusLanding() {
 
                 <button
                   onClick={() => setShowAndroidModal(true)}
-                  className="sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
+                  className="w-36 sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
                 >
-                  <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
+                  <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain scale-105 sm:scale-100" />
                 </button>
               </div>
 
@@ -252,9 +252,9 @@ export default function LocusLanding() {
 
             <button
               onClick={() => setShowAndroidModal(true)}
-              className="sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
+              className="w-36 sm:w-48 h-12 sm:h-14 rounded-2xl hover:cursor-pointer flex-shrink-0"
             >
-              <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain" />
+              <Image src={PreregisterGoogle} alt="google play icon" className="w-full h-full object-contain scale-105 sm:scale-100" />
             </button>
           </div>
         </div>
