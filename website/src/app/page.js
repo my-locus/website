@@ -237,7 +237,7 @@ export default function LocusLanding() {
             Your AI wingman is waiting
           </h2>
           <p className="text-lg text-slate-600 mb-8">
-            Stop settling for safe, boring dates that kill the vibe. Get personality insights and let science create sparks.
+            Stop settling for safe, boring dates that kill the vibe. Get personality insights, a place that fits you both, and let science create sparks.
           </p>
 
           <div className="flex flex-row justify-center gap-3 sm:gap-5">
