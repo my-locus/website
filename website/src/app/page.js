@@ -8,6 +8,7 @@ import Logo from "./components/ui/Logo"
 import Modal from "./components/ui/Modal"
 import DownloadApple from "../../assets/download_apple.svg"
 import PreregisterGoogle from "../../assets/preregister_google.png.png"
+import GetAppButton from './components/ui/GetAppButton';
 
 export default function LocusLanding() {
 
@@ -16,47 +17,47 @@ export default function LocusLanding() {
 
   const faqs = [
     {
-      question: "How does Locus work?",
-      answer: "Both you and your match complete a quick onboarding personality quiz based on the OCEAN model (openness, conscientiousness, extraversion, agreeableness, neuroticism). Our AI analyzes both personalities to recommend date locations and plans that create the right vibe for genuine connection—no more awkward boba runs."
+      question: "How does locus work?",
+      answer: "Both you and your partner complete a quick onboarding personality quiz based on the OCEAN model. Our AI analyzes both personalities to recommend spots that you both and gives you insight about each other."
     },
     {
-      question: "Is Locus free?",
-      answer: "Yes, the core features of Locus—getting personalized plans and connecting with another person—are free to use. As a UC Irvine launched startup, all your features are available at no cost."
+      question: "Is locus free?",
+      answer: "Yes. Free to use."
     },
     {
       question: "Do both people need to have the app?",
-      answer: "Yes, for the best and most accurate recommendations, both people need to download the app and complete their onboarding personality quiz. This ensures the plan is perfectly personalized for both of you. When you invite someone, they get a special link that takes them right to the app for a smooth and quick setup."
+      answer: "Yes so you can get the most accurate results. However we're commited to making the sharing process as easy as possible."
     },
     {
-      question: "What makes Locus different from other dating solutions?",
-      answer: "Unlike other apps that keep you glued to your phone with endless icebreakers, Locus gets you off the app and into real life faster. We're not competing with dating apps—we're making their users more successful by solving the disconnect that happens after you match."
+      question: "What makes locus different?",
+      answer: "Existing apps either keep you stuck on your phone with endless icebreakers or no direction. locus gets you off the app and into real life faster. We're not a dating app. We help our users have better connections with the partner they just met, like an actual wingman."
     },
     {
-      question: "What's the best way to invite someone to use Locus without it being awkward?",
-      answer: "We recommend framing it as a fun, easy way to skip the planning headache and get personality insights about each other: 'Hey, so I just found this new app called Locus. It's like an AI that finds cool spots based on our personalities and helps us understand each other better. Wanna try it out?'"
+      question: "What's a way to invite someone to use locus?",
+      answer: "Locus is an AI wingman that knows both of us. We both take a quick personality quiz - then get insights about each other and date plans tailored to our combined personalities."
     },
     {
-      question: "Does Locus learn from my preferences?",
-      answer: "Yes! Our AI learns from the date plan suggestions you use and reject, giving you a more personalized experience the more you use Locus. This means better recommendations over time that truly match your style."
+      question: "Does locus learn from my preferences?",
+      answer: "Yes. Our AI learns from the date plan suggestions you use and reject, giving you a more personalized experience the more you use locus. This means better recommendations over time that truly match your style."
     },
     {
-      question: "When is Android coming?",
-      answer: "Great news! The Android version of Locus is currently in a closed beta. We're looking for passionate users to help us test the app, find bugs, and give us feedback so we can move on to a public release. If you're an Android user and want to be one of the first to try Locus, you can sign up to become a beta tester."
+      question: "When is Android arriving?",
+      answer: "The Android version of locus is currently in a closed beta. We're looking for Android insiders to help us test, find bugs, and give feedback . If you're an Android user and want to be one of the first to try locus, you can sign up to become a beta tester."
     },
   ];
 
   return (
     <div className="min-h-screen bg-off-white">
       {/* Featured Header */}
-      <div className="bg-yellow-500 py-3">
+      <div className="bg-yellow-400 py-3">
         <div className="container mx-auto px-4">
-          <p className="text-center text-sm font-bold text-black">
+          <p className="lato text-center text-sm font-bold text-slate-800">
             🎉 Featured by UCI ANTrepreneur Center -{" "}
             <a
               href="https://antrepreneur.uci.edu/2025/10/24/interview-with-antrepreneurs-larry-le-and-aadi-agrawal-of-locus/"
               target="_blank"
               rel="noopener"
-              className="underline hover:no-underline"
+              className="text-blue-500 underline hover:no-underline"
             >
               Read the full interview
             </a>
@@ -69,7 +70,8 @@ export default function LocusLanding() {
         <nav className="flex items-center justify-between">
           <Logo />
           <div className="flex items-center gap-6">
-            <a
+            <GetAppButton />
+            {/* <a
               href="/manifesto"
               className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
             >
@@ -80,7 +82,7 @@ export default function LocusLanding() {
               className="font-medium text-slate-700 hover:text-slate-400 transition-colors duration-300"
             >
               FAQ
-            </a>
+            </a> */}
           </div>
         </nav>
       </header>
@@ -121,8 +123,8 @@ export default function LocusLanding() {
                 <span className='text-locus-off-purple'>awkward boba date</span>
               </h1>
 
-              <p className="text-lg md:text-xl mb-8 text-slate-700">
-                Skip the planning stress and back and forth texts trying to learn about someone. Locus uses a quick onboarding personality quiz to give you insight and a date plan that lets you both be yourselves.</p>
+              <p className="comic-relief text-lg md:text-xl mb-8 text-slate-700">
+                Skip the planning stress and back and forth texts trying to learn about someone. locus uses a quick onboarding personality quiz to give you insight and a date plan that lets you both be yourselves.</p>
 
               {/* App Store Buttons */}
               <div className="flex flex-row gap-3 sm:gap-5 mb-6">
@@ -170,7 +172,7 @@ export default function LocusLanding() {
                   >
                     <Image
                       src={Demo}
-                      alt="Locus App Demo"
+                      alt="locus App Demo"
                       width={320}
                       height={640}
                       className="w-full h-full object-cover"
@@ -219,7 +221,7 @@ export default function LocusLanding() {
                   style={{ overflow: 'hidden' }}
                 >
                   <div className="px-6 pb-6">
-                    <p style={{ color: '#717171' }}>
+                    <p className='comic-relief' style={{ color: '#717171' }}>
                       {faq.answer}
                     </p>
                   </div>
@@ -236,7 +238,7 @@ export default function LocusLanding() {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-700 mb-6">
             Your AI wingman is waiting
           </h2>
-          <p className="text-lg text-slate-600 mb-8">
+          <p className="comic-relief text-lg text-slate-600 mb-8">
             Stop settling for safe, boring dates that kill the vibe. Get personality insights, a place that fits you both, and let science create sparks.
           </p>
 
@@ -265,7 +267,7 @@ export default function LocusLanding() {
         <div className="px-5 lg:px-24 flex items-center justify-between">
           <div />
 
-          <p className='text-slate-700 font-lato'>&copy;2025 locusapp</p>
+          <p className='text-slate-700 lato'>&copy;2025 locusapp</p>
         </div>
       </footer>
 
@@ -276,7 +278,7 @@ export default function LocusLanding() {
             Android Beta Testing
           </h3>
           <p className="text-slate-600 mb-6">
-            The Android version is currently in beta testing. Join our beta program to be among the first to try Locus on Android!
+            The Android version is currently in beta testing. Join our beta program to be among the first to try locus on Android!
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScaCrWWdVTitHf3WAhuqA2z0QJ57ukPe2wYzjLRlmXBeOzflA/viewform?usp=dialog"

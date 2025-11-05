@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Locus",
+  title: "locus",
   description: "Stop settling for boring boba dates. Locus uses personality science to create perfect date plans for college students. Get personality insights and let AI find your spark.",
 
   // Open Graph (OG) tags (which web crawlers like Apple's will read when someone shares your)
   // website
   openGraph: {
     // title: ""
-    description: 'Stop settling for boring boba dates. Get personality insights and let AI create the perfect date plan.',
-    siteName: 'Locus',
+    description: 'Locus is an AI wingman that knows both of you. You both take a quick personality quiz - then get insights about each other and date plans tailored to your combined personalities.',
+    siteName: 'locus',
     url: 'https://www.trylocus.app', // The canonical URL
 
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
         url: 'https://www.trylocus.app/opengraph-image.png',
         width: 1200,
         height: 630,
-        alt: 'Locus - AI Dating App for College Students',
+        alt: 'locus - A mutual AI wingman for first dates',
       },
     ],
     locale: 'en_US',
